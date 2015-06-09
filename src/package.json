@@ -1,0 +1,16 @@
+{
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "stage": 0,
+          "optional": [
+            "runtime"
+          ]
+        }
+      ],
+      "envify"
+    ]
+  }
+}
