@@ -52,11 +52,13 @@ const Header = React.createClass({
     });
     return (
       <header className="home-page__header">
-        <h1>Logo 区域</h1>
+        <div className="logo">
+          <h1>Logo 区域</h1>
+        </div>
         <div className="site-nav">
           <ul className="site-nav__list">
             {menuL}
-            <li className="site-nav__item--search">
+            <li className="site-nav__item site-nav__item--search">
               <input type="text" placeholder="Search" />
             </li>
             {menuR}

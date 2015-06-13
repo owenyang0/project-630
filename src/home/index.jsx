@@ -8,10 +8,15 @@ import MoneyBanner from './MoneyBannar';
 
 import Header from '../../components/header'
 
+import homeActions from './actions';
+import homeStore from './stores/homeStore';
 
 const PropTypes = React.PropTypes;
 
 const HomePage = React.createClass({
+  mixins:[
+    Reflux.listenTo(homeStore, 'onHomeStoreUpdate')
+  ],
   getInitialState: function() {
     return {
       info: {}
