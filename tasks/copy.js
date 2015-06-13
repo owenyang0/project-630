@@ -16,7 +16,7 @@ const defaultConfig = {
       'dest': 'public/'
     },
     {
-      'src': 'node_modules/semantic-ui-less/themes/default/assets/**',
+      'src': 'src/assets/{,**/}*',
       'dest': 'public/assets'
     }
   ]

@@ -33,7 +33,7 @@ const HomePage = React.createClass({
       <div className="home-page">
         <Header />
         <div className="home-page__body">
-          main
+          <div className="hero"></div>
         </div>
         <Footer />
       </div>

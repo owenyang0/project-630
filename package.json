@@ -67,6 +67,7 @@
     "bootstrap-styl": "^4.0.4",
     "codemirror": "^5.1.0",
     "compression": "^1.4.3",
+    "jeet": "^6.1.2",
     "marked": "^0.3.3",
     "react": "^0.13.1",
     "react-bem-render": "^0.2.1",

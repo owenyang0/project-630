@@ -53,7 +53,7 @@ const Header = React.createClass({
     return (
       <header className="home-page__header">
         <div className="logo">
-          <h1>Logo 区域</h1>
+          <h1>LOGO 区域</h1>
         </div>
         <div className="site-nav">
           <ul className="site-nav__list">
