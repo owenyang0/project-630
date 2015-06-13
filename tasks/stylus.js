@@ -8,6 +8,7 @@ import stylus from 'gulp-stylus'
 import autoprefixer from 'autoprefixer-stylus'
 
 import minifyCSS from 'gulp-minify-css';
+import bootstrap from'bootstrap-styl';
 
 import watcher from './libs/watcher'
 
@@ -30,7 +31,8 @@ const defaultConfig = {
     ],
     'use': [
       autoprefixer({ browsers: ['last 5 versions']}),
-      includeCss()
+      includeCss(),
+      bootstrap()
     ],
   }
 };

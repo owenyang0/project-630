@@ -5,7 +5,7 @@ const Home = React.createClass({
   render () {
     const props = this.props;
     return (
-      <div>
+      <div className="container">
         <HomePage />
       </div>
     );

@@ -16,12 +16,12 @@ import build from './tasks/build'
 
 build.setOptions({
   taskQueue: [
-    'symlink',
+    // 'symlink',
     'clean',
     'copy',
-    'svg-store',
+    // 'svg-store',
     'stylus',
-    'docs',
+    // 'docs',
     'browserify'
   ]
 });

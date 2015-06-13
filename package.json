@@ -64,6 +64,7 @@
     "watchify": "^3.0.0"
   },
   "dependencies": {
+    "bootstrap-styl": "^4.0.4",
     "codemirror": "^5.1.0",
     "compression": "^1.4.3",
     "marked": "^0.3.3",
