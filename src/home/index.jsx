@@ -7,6 +7,7 @@ import ReactSelect from 'react-select';
 import MoneyBanner from './MoneyBannar';
 
 import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 import homeActions from './actions';
 import homeStore from './stores/homeStore';
@@ -34,9 +35,7 @@ const HomePage = React.createClass({
         <div className="home-page__body">
           main
         </div>
-        <footer>
-          <h1>footer</h1>
-        </footer>
+        <Footer />
       </div>
     );
   }
