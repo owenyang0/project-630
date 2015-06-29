@@ -1,16 +1,28 @@
 import React from 'react';
+import { Route, Link, run, RouteHandler, HashLocation } from 'react-router';
+
 import HomePage from './home';
 
-const Home = React.createClass({
+const App = React.createClass({
   render () {
     const props = this.props;
     return (
       <div className="container">
-        <HomePage />
+        <RouteHandler/>
       </div>
     );
   }
 });
 
+var routes = (
+  <Route handler={App}>
+    <Route path="/" handler={HomePage}>
+      <Route path="*" component={App}/>
+    </Route>
+  </Route>
+);
 
-React.render(<Home />, document.body);
+run(routes, HashLocation, (Root) => {
+  React.render(<Root/>, document.body);
+});
+
