@@ -42,7 +42,13 @@ const ChannelPage = React.createClass({
     return (
       <div className="page page--channel">
         <div className="page__body">
-          {contracts}
+          <div className="news-container">
+            {contracts}
+          </div>
+          <div className="contract-control">
+            <a href="#" className="read-more red-button-arrow-left">最近</a>
+            <a href="#" className="read-more red-button-arrow">更多</a>
+          </div>
         </div>
       </div>
     );
