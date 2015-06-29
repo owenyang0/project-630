@@ -14,7 +14,7 @@ const menuLeft = [
 const menuRight = [
   {
     title: '频道1',
-    link: '#'
+    link: '#/channel'
   }, {
     title: '频道2',
     link: '#'

@@ -31,11 +31,9 @@ const HomePage = React.createClass({
 
     return (
       <div className="home-page">
-        <Header />
         <div className="home-page__body">
           <div className="hero"></div>
         </div>
-        <Footer />
       </div>
     );
   }
