@@ -5,6 +5,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import HomePage from './home';
 import ChannelPage from './channel';
+import RevisionPage from './revisions';
 
 const App = React.createClass({
   render () {
@@ -26,6 +27,7 @@ var routes = (
     <Route path="/" handler={HomePage}>
     </Route>
     <Route path="channel" handler={ChannelPage}/>
+    <Route path="channel/revision" handler={RevisionPage}/>
   </Route>
 );
 

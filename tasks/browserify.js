@@ -18,7 +18,8 @@ import watcher from './libs/watcher'
 
 const vendors = [
   'react',
-  'lodash'
+  'lodash',
+  'ramda'
 ];
 
 const defaultConfig = {

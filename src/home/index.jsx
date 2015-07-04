@@ -1,6 +1,5 @@
 import React from 'react';
 import numeral from 'numeral';
-import classNames from 'classNames';
 import Reflux from 'reflux';
 import ReactSelect from 'react-select';
 

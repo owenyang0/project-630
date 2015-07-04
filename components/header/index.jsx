@@ -17,7 +17,7 @@ const menuRight = [
     link: '#/channel'
   }, {
     title: '频道2',
-    link: '#'
+    link: '#/channel/revision'
   }, {
     title: '登陆',
     link: '#'
