@@ -24,19 +24,42 @@ const versions = [{
   extra: {
     background: 'http://metaversemodsquad.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-18-at-12.48.36-PM.png'
   }
-}]
+}];
 
+var tags = new Map();
+
+tags.set(1, {
+  name: '版本1',
+  date: '6/12/2015'
+});
+
+tags.set(2, {
+  name: '版本2',
+  date: '6/22/2015'
+});
 
 const PropTypes = React.PropTypes;
 
 const RevisionsPage = React.createClass({
   componentWillMount: function() {
   },
+  getInitialState: function() {
+    return {
+      tags: tags
+    }
+  },
   render () {
     const props = this.props;
+    const state = this.state;
     let comparing = R.take(2, versions).map(function(ver, idx) {
       return (
         <Contract data={ver} />
+      );
+    });
+
+    let ts = [...state.tags.values()].map(function(tag, idx) {
+      return (
+        <button className="btn btn--tag">{tag.name} | {tag.date}</button>
       );
     });
 
@@ -53,15 +76,26 @@ const RevisionsPage = React.createClass({
             </div>
           </section>
           <section className="version__tag">
-            <button className="btn btn--tag">标签1</button>
-            <button className="btn btn--tag">标签2</button>
-            <button className="btn btn--tag">标签3</button>
-            <button className="btn btn--tag">标签4</button>
-            <button className="btn btn--add">添加标签</button>
+            {ts}
+            <button onClick={this._onAddTag} className="btn btn--add">添加标签</button>
           </section>
         </div>
       </div>
     );
+  },
+
+  _onAddTag: function() {
+    tags = this.state.tags;
+
+    var tagId = tags.size + 1;
+    tags.set(tagId, {
+      name: '版本' + tagId,
+      date: (new Date()).toLocaleDateString()
+    });
+
+    this.setState(
+      {tags: tags}
+    )
   }
 });
 
