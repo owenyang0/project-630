@@ -58,7 +58,7 @@ const Header = React.createClass({
           <ul className="site-nav__list">
             {menuL}
             <li className="site-nav__item site-nav__item--search">
-              <input type="text" placeholder="Search" />
+              <input type="text" className="form-control" placeholder="Search" />
             </li>
             {menuR}
           </ul>
