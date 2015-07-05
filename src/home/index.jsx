@@ -1,9 +1,6 @@
 import React from 'react';
-import numeral from 'numeral';
 import Reflux from 'reflux';
 import ReactSelect from 'react-select';
-
-import MoneyBanner from './MoneyBannar';
 
 import Header from '../../components/header'
 import Footer from '../../components/footer'
