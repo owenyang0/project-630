@@ -20,12 +20,11 @@ const Contract = React.createClass({
     var styles = {
       backgroundImage: 'url(' + data.extra.background + ')'
     };
-    console.log(props);
 
     return (
       <div className="news-element">
           <span className="ne-tag article"></span>
-          <a className="ne-img" style={styles} href="#"></a>
+          <a className="ne-img" style={styles} href="#/product/2"></a>
           <div className="ne-main">
               <div className="ne-copy">
                   <div className="ne-headline">{data.title}</div>

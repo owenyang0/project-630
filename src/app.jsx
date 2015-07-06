@@ -6,6 +6,7 @@ import Footer from '../components/footer'
 import HomePage from './home';
 import ChannelPage from './channel';
 import RevisionPage from './revisions';
+import ProductPage from './product';
 
 const App = React.createClass({
   render () {
@@ -20,14 +21,13 @@ const App = React.createClass({
   }
 });
 
-console.log(ChannelPage);
-
 var routes = (
   <Route handler={App}>
     <Route path="/" handler={HomePage}>
     </Route>
     <Route path="channel" handler={ChannelPage}/>
     <Route path="channel/revision" handler={RevisionPage}/>
+    <Route path="product/:productId" handler={ProductPage}/>
   </Route>
 );
 

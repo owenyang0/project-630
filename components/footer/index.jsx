@@ -6,7 +6,7 @@ const Footer = React.createClass({
   },
   render () {
     return (
-      <header className="home-page__footer">
+      <footer className="home-page__footer">
         <div className="footer-head">
           <h3>版权页示意</h3>
         </div>
@@ -19,7 +19,7 @@ const Footer = React.createClass({
             <p>Copyright © 2015 Deutsche Bank AG, Frankfurt am Main</p>
           </div>
         </div>
-      </header>
+      </footer>
     );
   }
 });
