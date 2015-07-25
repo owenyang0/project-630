@@ -13,6 +13,8 @@ import jeet from'jeet';
 
 import watcher from './libs/watcher'
 
+console.log(bootstrap.toString());
+
 const defaultConfig = {
   'files': [
     {
@@ -28,7 +30,8 @@ const defaultConfig = {
   ],
   'options': {
     'include': [
-      path.join(process.cwd(), 'node_modules')
+      path.join(process.cwd(), 'node_modules'),
+      path.join(process.cwd(), 'node_modules/bootstrap-styl/bootstrap/mixins')
     ],
     'use': [
       autoprefixer({ browsers: ['last 5 versions']}),

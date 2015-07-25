@@ -1,0 +1,32 @@
+.contract
+  // position: relative
+
+.frozen .contract__image
+  // background-attachment: fixed
+
+.contract__image
+  height: 800px
+  bg-img()
+
+.contract__content
+  position: relative
+  height: 580px
+  bg-img()
+  background-image: url('/assets/images/contract.png')
+  background-position: left top
+
+  .extra-image
+    position: absolute
+    top: -250px
+    left: 200px
+
+.component-stickybox > * {
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
+
+.component-stickybox.frozen > * {
+  position: fixed;
+  top: 0;
+}
