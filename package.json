@@ -74,6 +74,7 @@
     "react-bem-render": "^0.2.1",
     "react-router": "^0.13.3",
     "react-select": "^0.4.9",
+    "react-slick": "^0.6.4",
     "reflux": "^0.2.7"
   }
 }

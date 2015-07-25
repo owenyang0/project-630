@@ -3,12 +3,12 @@ import Reflux from 'reflux';
 import ReactSelect from 'react-select';
 
 import Header from '../../components/header'
+import Carousel from '../../components/carousel'
 import Footer from '../../components/footer'
 
 import homeActions from './actions';
 import homeStore from './stores/homeStore';
 
-const PropTypes = React.PropTypes;
 
 const HomePage = React.createClass({
   mixins:[
@@ -17,22 +17,20 @@ const HomePage = React.createClass({
   getInitialState: function() {
     return {
       info: {}
-    };
+    }
   },
   componentWillMount: function() {
   },
   render () {
-    const props = this.props;
-    var info = this.state.info;
 
     return (
-      <div className="home-page">
-        <div className="home-page__body">
-          <div className="hero"></div>
+      <div className='content content--home'>
+        <div className='content__body content__body--home'>
+          <Carousel/>
         </div>
       </div>
-    );
+    )
   }
-});
+})
 
-export default HomePage;
+export default HomePage
