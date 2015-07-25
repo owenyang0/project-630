@@ -6,26 +6,17 @@ const menuLeft = [
     title: '首页',
     link: '#'
   }, {
-    title: '帐户区',
+    title: '我的合同',
+    link: '#'
+  }, {
+    title: '快速编辑',
+    link: '#'
+  }, {
+    title: '商标注册',
     link: '#'
   }
 ];
 
-const menuRight = [
-  {
-    title: '频道1',
-    link: '#/channel'
-  }, {
-    title: '频道2',
-    link: '#/channel/revision'
-  }, {
-    title: '登陆',
-    link: '#'
-  }, {
-    title: '注册',
-    link: '#'
-  }
-];
 
 const PropTypes = React.PropTypes;
 const Header = React.createClass({
@@ -40,27 +31,26 @@ const Header = React.createClass({
           <a href={menu.link}>{menu.title}</a>
         </li>
       );
-    });
+    })
 
-    var menuR = menuRight.map((menu) => {
-      return (
-        <li className="site-nav__item">
-          <a href={menu.link}>{menu.title}</a>
-        </li>
-      );
-    });
+    var avatar = '/assets/images/avatar.jpg'
+
     return (
-      <header className="home-page__header">
-        <div className="logo">
-          <h1>LOGO 区域</h1>
-        </div>
+      <header className="header">
         <div className="site-nav">
           <ul className="site-nav__list">
             {menuL}
             <li className="site-nav__item site-nav__item--search">
               <input type="text" className="form-control" placeholder="Search" />
             </li>
-            {menuR}
+            <li className="site-nav__item">
+              <a href="#" className='icon icon--mail'></a>
+            </li>
+            <li className="site-nav__item">
+              <a href="#">
+                <img className='avatar' src={avatar} alt="avatar" />
+              </a>
+            </li>
           </ul>
         </div>
       </header>

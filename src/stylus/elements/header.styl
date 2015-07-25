@@ -1,46 +1,30 @@
-.home-page__header
-  position: relative;
+.header
   color: #555;
-  border-bottom: 1px solid #395F91;
   overflow: hidden;
 
 .site-nav__list
   margin: 0;
-  line-height: 70px;
   list-style: none;
 
 
 
 .site-nav__item
-  padding: 0 10px;
+  padding: 0 20px;
   position: relative;
 
-  &:after
-    border-right: 1px solid #777;
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 28px;
-    display: block;
-    height: 13px;
+  &:hover
+    background-color: #385FA4
 
-  &:last-child
-     margin-right:-10px
-
-
-  &:nth-child(2),
-  &.site-nav__item--search
-    &:after
-      border: none;
-
+  .avatar
+    width: 40px
+    border-radius: 50%
 
   a
-    font-size: 14px;
-    color: #777;
-    text-decoration: none;
-
-    &:hover
-      color: #444;
+    display: block
+    font-size: 14px
+    line-height: 50px
+    color: #fff
+    text-decoration: none
 
 .logo,
 .site-nav,
@@ -48,14 +32,16 @@
   display: inline-block;
 
 .site-nav
-  position: absolute;
-  right: 0;
+  width: 100%
+  text-align: center
+  background-color: #27509E
 
 .logo h1
   font-weight: 400;
 
 .site-nav__item--search
-  margin-right: 20px;
+  padding: 0
+  margin: 0 20px
 
   // input
   //   padding: 6px 12px;
