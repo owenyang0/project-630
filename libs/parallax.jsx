@@ -69,7 +69,6 @@ var Parallax = React.createClass({
     var children = React.Children.map(
       this.props.children,
       function(child, idx) {
-        console.log(child, idx)
         return React.createElement(Stickybox, {className: 'card', idx: idx}, child);
       }
     );
