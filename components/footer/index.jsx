@@ -15,7 +15,7 @@ const Footer = React.createClass({
               </li>
             </ul>
             <div className='qr'>
-              <img src="/assets/images/qr.png" alt="qr" />
+              <img src="/assets/images/qr.png" alt="qr"/>
             </div>
           </div>
           <div className="footer-legal">

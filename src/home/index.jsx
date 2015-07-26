@@ -6,8 +6,8 @@ import Carousel from '../../components/carousel'
 import Contract from '../../components/contract'
 import Comment from '../../components/comment'
 import Trademark from '../../components/trademark'
+import Partners from '../../components/partners'
 
-import homeActions from './actions';
 import homeStore from './stores/homeStore';
 
 
@@ -31,6 +31,7 @@ const HomePage = React.createClass({
           <Contract />
           <Comment />
           <Trademark />
+          <Partners />
         </div>
       </div>
     )
