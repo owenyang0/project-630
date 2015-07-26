@@ -13,8 +13,6 @@ import jeet from'jeet';
 
 import watcher from './libs/watcher'
 
-console.log(bootstrap.toString());
-
 const defaultConfig = {
   'files': [
     {
@@ -61,7 +59,6 @@ const task = gulp.task(TASK_NAME, function () {
     }
 
     if (fileConf.options.watch && watcher.isWatching()) {
-      console.log(fileConf.src)
       gulp.watch([].concat(fileConf.src), function (evt) {
         gutil.log(evt.path, evt.type);
         bundle();

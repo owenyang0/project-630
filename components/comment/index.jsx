@@ -2,18 +2,14 @@
 import React from 'react'
 import Parallax from '../../libs/parallax'
 
-const d = {
-  extra: {
-    background: '/assets/images/lady.png'
-  }
-}
+const background = '/assets/images/comment-show.png'
 
-const Contract = React.createClass({
+const Comment = React.createClass({
   componentWillMount: function () {
   },
   render () {
     var styles = {
-      backgroundImage: 'url(' + d.extra.background + ')'
+      backgroundImage: 'url(' + background + ')'
     }
 
     return (
@@ -21,7 +17,7 @@ const Contract = React.createClass({
         <Parallax>
           <div className='stick__image' style={styles}></div>
         </Parallax>
-        <div className='stick__content'>
+        <div className='stick__content stick__content--comment'>
           <img className='extra-image' src='/assets/images/phone.png' alt='phone'/>
           <a className='more' href='#'></a>
         </div>
@@ -30,5 +26,5 @@ const Contract = React.createClass({
   }
 })
 
-export default Contract
+export default Comment
 

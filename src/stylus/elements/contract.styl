@@ -1,14 +1,14 @@
-.contract
+.stick
   // position: relative
 
-.frozen .contract__image
+.frozen .stick__image
   // background-attachment: fixed
 
-.contract__image
+.stick__image
   height: 800px
   bg-img()
 
-.contract__content
+.stick__content
   position: relative
   height: 580px
   bg-img()
@@ -20,6 +20,15 @@
     top: -250px
     left: 200px
 
+.stick__content--comment
+  overflow: hidden
+  background-image: url('/assets/images/comment.png')
+
+  .extra-image
+    top: 0px
+    left: auto
+    right: 10%
+
 .component-stickybox > * {
   width: 100%;
   padding: 0;
@@ -29,4 +38,5 @@
 .component-stickybox.frozen > * {
   position: fixed;
   top: 0;
+  z-index: -1
 }
