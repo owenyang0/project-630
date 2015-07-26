@@ -154,10 +154,6 @@ var Stickybox = React.createClass({
   }
 });
 
-var parallaxWithContent = React.createElement(Parallax, {index: 0}, React.createElement('img', {className: 'section2', src: 'http://galleria.io/static/i/s2013/1m.jpg'}), React.createElement('img', {className: 'section2', src: 'http://galleria.io/static/i/s2013/2m.jpg'}), React.createElement('img', {className: 'section2', src: 'http://galleria.io/static/i/s2013/3m.jpg'}));
-
-var content = React.createElement('div', null, parallaxWithContent);
-
 
 module.exports = Parallax;
 
