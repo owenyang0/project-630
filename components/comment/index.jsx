@@ -24,7 +24,7 @@ const Comment = React.createClass({
         </Parallax>
         <div className='stick__content stick__content--comment'>
           <img className='extra-image' src='/assets/images/phone.png' alt='phone'/>
-          <a className='more' href='#'></a>
+          <a className='more' href='#'>了解更多></a>
         </div>
         <Parallax>
           <div className='stick__image' style={run}></div>
